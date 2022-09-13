@@ -1,0 +1,30 @@
+//init
+$("#aboutPage").show()
+$("#projectPage").hide()
+$("#contactPage").hide()
+
+$("#homeAbout").click(function(){
+    $("#aboutPage").show()
+    $("#projectPage").hide()
+    $("#contactPage").hide()
+})
+$("#homeProject").click(function(){
+    $("#projectPage").show()
+    $("#aboutPage").hide()
+    $("#contactPage").hide()
+})
+$("#homeProjectMore").click(function(){
+    $("#projectPage").show()
+    $("#aboutPage").hide()
+    $("#contactPage").hide()
+})
+$("#homeSkills").click(function(){
+    $("#contactPage").show()
+    $("#projectPage").hide()
+    $("#aboutPage").hide()
+})
+$("#homeContact").click(function(){
+    $("#contactPage").show()
+    $("#projectPage").hide()
+    $("#aboutPage").hide()
+})

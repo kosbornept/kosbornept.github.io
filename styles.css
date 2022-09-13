@@ -1,0 +1,84 @@
+/* Universal */
+body {
+    background-image: url(./images/pexels-scott-webb-305821.jpg);
+    height: 100vh;
+    padding: 0;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+hr {
+    width: 30%;
+}
+
+/* Navigation */
+
+#menuButton {
+    justify-content: end;
+    padding-top: .5em;
+}
+
+#offcanvasNavbar {
+    width: 20%;
+}
+
+/* About Page */
+
+#titleContainer {
+    text-align: center;
+    padding: 1em;
+}
+
+#aboutJumbotron {
+    float: left;
+    padding: 7rem;
+    width: 60%;
+    padding-bottom: 2em;
+    padding-top: 5em;
+}
+
+#aboutProject {
+    float: left;
+    padding-left: 7em;
+}
+
+.card {
+    display: inline-flex;
+}
+
+/* Projects Page */
+
+#projectTitleContainer {
+    text-align: left;
+    padding:2em 0 0 2em;
+    width: 80%;
+}
+
+#projectJumbotron {
+    padding: 2em;
+    padding-top: 1em;
+    width: 80%;
+    margin: 0 auto;
+    border: .15em solid ;
+}
+
+#projectTimelineContainer {
+    width: 80%;
+    padding: 2em 0 2em 2em;
+}
+
+/* Skills Page */
+
+/* Contact Page */
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: .7em;
+    width: fit-content;
+    height: 10px;
+    font-size: .7em;
+}
+
+/* Media Queries */
