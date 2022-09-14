@@ -69,7 +69,23 @@ hr {
 
 /* Skills Page */
 
+#skillsJumbotron {
+    float: left;
+    padding: 7rem;
+    width: 60%;
+    padding-bottom: 2em;
+    padding-top: 5em;
+}
+
 /* Contact Page */
+
+#contactJumbotron {
+    float: left;
+    padding: 7rem;
+    width: 60%;
+    padding-bottom: 2em;
+    padding-top: 5em;
+}
 
 /* Footer */
 footer {
