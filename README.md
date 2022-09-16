@@ -12,15 +12,16 @@ Expected further minor updates pushed weekly or major updates monthly.
 
 ### QoL
 * Ensure site is A11Y friendly. (no date set)
+* Responsive Design (due 19/09/22)
 
 ### Known Issues
 * Dark Mode & Language not stored on users local storage.
-* Dark Mode theme on Navbar Modal not correct with rest of design. No proposed fix as due to be made redundant in next major update.
 
 ### Major Update
-* Re-imagine website navbar menu by adding animation on scroll to fade in/out between elements. (expected October '22)
+* Increased Animation and Functionality
 
 ### Completed Features List
 * Initial design delivered 15/09/22
 * Dark Mode (15/09/22)
 * Language Switch for EN & PT (15/09/22)
+* Redesign 1.0 - Full page scroll + animations.
