@@ -1,21 +1,30 @@
 /* Universal */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url(./images/pexels-scott-webb-305821.jpg);
     height: 100vh;
     padding: 0;
     background-size: 100%;
     background-attachment: fixed;
+    text-align: center;
 }
 
-hr {
-    width: 30%;
-}
-
-h1, h2, h3, h4, h5, h6 {
+/* Fonts */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Merriweather', serif;
 }
 
-p, a, span {
+p,
+a,
+span {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -31,62 +40,93 @@ a:hover {
     color: #217036;
 }
 
+/* Align Items Center */
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+/* Animation */
+.hidden {
+    opacity: 0;
+    transition: all 1.5s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.card {
+    display: flex;
+}
+
+.card:nth-child(2) {
+    transition-delay: 150ms;
+}
+
+.card:nth-child(3) {
+    transition-delay: 300ms;
+}
+
+.card:nth-child(4) {
+    transition-delay: 450ms;
+}
+
+.card:nth-child(5) {
+    transition-delay: 600ms;
+}
+
+.card:nth-child(6) {
+    transition-delay: 750ms;
+}
+
 /* Navigation */
-
-#menuButton {
-    justify-content: end;
-    padding-top: .5em;
-}
-
-#offcanvasNavbar {
-    width: 20%;
-}
-
-#offcanvasNavbarLabel {
-    font-size: 3em;
-}
-
 .nav-link {
-    font-size: 1.75em;
+    font-size: 1.1em;
 }
 
 .active {
     text-decoration: underline;
 }
 
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: rgb(108, 117, 125);
+}
+
 /* About Page */
 
 #titleContainer {
-    text-align: center;
     padding: 5em;
+    width: 60%;
 }
 
 #aboutJumbotron {
-    float: left;
     padding: 7rem;
     width: 60%;
     padding-bottom: 2em;
     padding-top: 5em;
-}
-
-.card {
-    display: inline-flex;
+    border: .15em solid;
+    background-color: rgba(233, 232, 230, 0.7);
 }
 
 /* Projects Page */
-
 #projectTitleContainer {
-    text-align: left;
-    padding:2em;
+    padding: 5em;
     width: 80%;
 }
 
 #projectJumbotron {
     padding: 3em;
     width: 80%;
-    margin: 0 auto;
-    border: .15em solid ;
-    background-color: rgba(233,232,230,0.7);
+    border: .15em solid;
+    background-color: rgba(233, 232, 230, 0.7);
 }
 
 #projectTimelineContainer {
@@ -94,38 +134,45 @@ a:hover {
     padding: 2em 0 2em 2em;
 }
 
+/* Project Date Titles */
 .display-6 {
     padding: 1em;
 }
 
+/* Project Cards */
 .card-title {
-    margin: 0 auto;
-    text-align: center;
-    padding: 1em 0;
+    padding: 1.25em 0 1em;
+}
+
+/* Center Single Project Card */
+.projectCenter {
+    display: contents;
+}
+
+/* Skills Page */
+#skillsJumbotron {
+    padding: 7rem;
+    width: 60%;
+    padding-bottom: 2em;
+    padding-top: 5em;
+    display: inline-block;
+    width: fit-content;
+    border: .15em solid;
+    background-color: rgba(233, 232, 230, 0.7);
+}
+
+/* Contact Page */
+#contactJumbotron {
+    padding: 7rem;
+    width: 60%;
+    padding-bottom: 2em;
+    padding-top: 5em;
+    border: .15em solid;
+    background-color: rgba(233, 232, 230, 0.7);
 }
 
 .contactButton:hover {
     color: #32a351;
-}
-
-/* Skills Page */
-
-#skillsJumbotron {
-    float: left;
-    padding: 7rem;
-    width: 60%;
-    padding-bottom: 2em;
-    padding-top: 5em;
-}
-
-/* Contact Page */
-
-#contactJumbotron {
-    float: left;
-    padding: 7rem;
-    width: 60%;
-    padding-bottom: 2em;
-    padding-top: 5em;
 }
 
 /* Footer */
@@ -139,65 +186,53 @@ footer {
 }
 
 /* Dark Mode */
-
 .dark-mode {
     background-image: url(./images/pexels-kios-garcia-5924958.jpg);
-    color: rgb(233,232,230);
-    background-color: rgb(13,13,23);
-    -webkit-transition: all 0.7s ease-in-out;
+    color: rgb(233, 232, 230);
+    background-color: rgb(13, 13, 23);
+    -webkit-transition: all 0.7s ease-in;
+    -webkit-transition: all 1.2s ease-out;
 }
 
-#darkModeContainer {
-    margin: 0 auto;
-    text-align: center;
-    padding: 1em;
+.dark-mode .card,
+.dark-mode #titleContainer,
+.dark-mode #aboutJumbotron,
+.dark-mode #projectJumbotron,
+.dark-mode #skillsJumbotron,
+.dark-mode #contactJumbotron {
+    color: rgb(233, 232, 230);
+    background-color: rgba(13, 13, 23);
+    border: .25em solid rgba(233, 232, 230, 0.7);
 }
 
-.dark-mode .card {
-    color: rgb(233,232,230);
-    background-color: rgba(13,13,23);
-    border: .25em solid rgba(233,232,230,0.7);
-}
-
-.dark-mode #projectJumbotron {
-    color: rgb(233,232,230);
-    background-color: rgba(13,13,23);
-    border: .25em solid rgba(233,232,230,0.7);
-}
-
-.dark-mode .nav-link {
-    color: rgb(233,232,230);
+.dark-mode .nav-link,
+.dark-mode button.navbar-toggler,
+.dark-mode span .navbar-toggler-icon {
+    color: rgb(233, 232, 230);
 }
 
 .dark-mode .nav-link.active {
-    color: rgba(233,232,230,0.7)
+    color: rgba(233, 232, 230, 0.7)
 }
 
-.dark-mode button.navbar-toggler {
-    color: rgb(233,232,230);
-}
-
-.dark-mode span .navbar-toggler-icon {
-    color: rgb(233,232,230);
-}
-
+/* Dark Mode Switch */
 /* The switch - the box around the slider */
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
+    width: 30px;
+    height: 17px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  /* The slider */
-  .slider {
+}
+
+/* The slider */
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -207,203 +242,41 @@ footer {
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: rgb(13,13,23);
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px rgb(13,13,23);
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
+}
+
+input:checked+.slider {
+    background-color: rgb(13, 13, 23);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 .5px rgb(13, 13, 23);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 17px;
+}
+
+.slider.round:before {
     border-radius: 50%;
-  }
-
-/* Media Queries */ 
-
-@media only screen and (min-width: 2560px) {
-    p.lead {
-        font-size: 2em;
-    }
-    p {
-        font-size: 1.5em;
-    }
-    span.navbar-toggler-icon {
-        font-size: 2em;
-    }
-  }
-
-@media only screen and (max-width: 2559px) {
-    #titleContainer {
-        padding: 3em;
-        padding-bottom: 2em;
-    }
-    #contactJumbotron {
-        padding-top: 2em;
-    }
-    #skillsJumbotron {
-        padding-top: 2em;
-    }
 }
 
-@media only screen and (max-width: 1024px) {
-    body {
-        background-size: cover;
-    }
-    #titleContainer {
-        padding: 2em;
-        padding-bottom: 1em;
-    }
-    #aboutJumbotron {
-        padding-top: 2em;
-        padding-bottom: 0;
-    }
-    .display-2 {
-        font-size: calc(1.175rem + 3.9vw);
-    }
-    .display-4 {
-        font-size: calc(1rem + 2.7vw);
-    }
-    #offcanvasNavbarLabel {
-        font-size: 2em;
-    }
-    .nav-link {
-        font-size: 1.5em;
-    }
-    .display-6 {
-        padding: .5em;
-    }
-    #contactJumbotron {
-        padding-top: 1em;
-        width: 100%;
-        padding-bottom: .5em;
-    }
-    #skillsJumbotron {
-        padding-top: 0;
-        padding-bottom: 0;
-        width: 100%;
-    }
-    .display-5 {
-        font-size: calc(.9rem + 2.1vw);
-    }
-    h2.display-4 {
-        font-size: calc(.9rem + 2.1vw);
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    body {
-        background-size: cover;
-    }
-    #titleContainer {
-        padding: 2em;
-        padding-bottom: 1em;
-    }
-    #aboutJumbotron {
-        padding-top: 2em;
-        padding-bottom: 0;
-        width: 100%;
-        background-color: rgba(233,232,230,0.7);
-        border-top: .15em solid ;
-        border-bottom: .15em solid ;
-    }
-    .display-2 {
-        font-size: calc(1.175rem + 3.9vw);
-    }
-    .display-4 {
-        font-size: calc(1rem + 2.7vw);
-    }
-    #offcanvasNavbarLabel {
-        font-size: 2em;
-    }
-    .nav-link {
-        font-size: 1.5em;
-    }
-    .display-6 {
-        padding: .5em;
-    }
-    #contactJumbotron {
-        padding-top: 1em;
-        width: 100%;
-        padding-bottom: .5em;
-    }
-    #skillsJumbotron {
-        padding-top: 0;
-        padding-bottom: 0;
-        width: 100%;
-    }
-    .display-5 {
-        font-size: calc(.9rem + 2.1vw);
-    }
-    h2.display-4 {
-        font-size: calc(.9rem + 2.1vw);
-    }
-}
-
-@media only screen and (max-width: 425px) {
-    body {
-        background-size: cover;
-    }
-    #titleContainer {
-        padding: 0;
-        padding-top: .5em;
-    }
-    #aboutJumbotron {
-        width: 100%;
-        padding: .5em;
-        padding-top: 2em;
-        text-align: center;
-    }
-    #offcanvasNavbar {
-        width: 100%;
-        text-align: center;
-    }
-    #offcanvasNavbarLabel {
-        margin: 0 auto;
-    }
-    .display-6 {
-        text-align: center;
-    }
-    #projectTimelineContainer {
-        width: 100%;
-        padding: 2em;
-    }
-    hr {
-        display: none;
-    }
-    #skillsJumbotron {
-        width: 100%;
-        padding: .75em;
-        text-align: center;
-    }
-    #contactJumbotron {
-        width: 100%;
-        padding: .5em;
-        text-align: center;
-    }
-}
+/* Media Queries */
