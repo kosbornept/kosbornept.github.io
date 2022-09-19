@@ -1,26 +1,78 @@
 //init
 $(".langEN").show()
 $(".langPT").hide()
+let langLocal = localStorage.getItem("lang-local")
 
 // English Language Switch Function
 $("#langEnPicker").click(function () {
     $(".langEN").show()
     $(".langPT").hide()
+    localStorage.setItem("lang-local", "english");
+})
+$("#langEnPickerMobile").click(function () {
+    $(".langEN").show()
+    $(".langPT").hide()
+    localStorage.setItem("lang-local", "english-mobile");
 })
 
 // Portuguese Language Switch Function
 $("#langPtPicker").click(function () {
     $(".langPT").show()
     $(".langEN").hide()
+    localStorage.setItem("lang-local", "portugues");
+})
+$("#langPtPickerMobile").click(function () {
+    $(".langPT").show()
+    $(".langEN").hide()
+    localStorage.setItem("lang-local", "portugues-mobile");
 })
 
+// Lang Local Storage
+if (langLocal == "english") {
+    $(".langEN").show()
+    $(".langPT").hide()
+} else if (langLocal == "english-mobile") {
+    $(".langEN").show()
+    $(".langPT").hide()
+} else if (langLocal == "portugues") {
+    $(".langEN").hide()
+    $(".langPT").show()
+} else if (langLocal == "portugues-mobile") {
+    $(".langEN").hide()
+    $(".langPT").show()
+}
+
+// Nav Hide on Scroll
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navScroll").style.top = "0";
+  } else {
+    document.getElementById("navScroll").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
 // Dark Mode Toggle
+let darkLocal = localStorage.getItem("dark-local")
+let selCheck = document.getElementById("toggleSwitch");
+selCheck.checked = (localStorage.getItem("dark-switch")=="true");
 function darkMode() {
     var docuBody = document.body;
+    var selCheck = document.getElementById("toggleSwitch");
     docuBody.classList.toggle("dark-mode");
-    var docuMenu = document.getElementById("offcanvasNavbar");
-    docuMenu.classList.toggle("text-bg-dark");
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("dark-local", "enabled");
+        localStorage.setItem("dark-switch", selCheck.checked);
+    } else {
+        localStorage.setItem("dark-local", "disabled");
+        localStorage.setItem("dark-switch", selCheck.unchecked);
+    }
 }
+if (darkLocal === "enabled") {
+    darkMode();
+}   
 
 // Intersection Observer for Animation
 const observer = new IntersectionObserver((entries) => {
