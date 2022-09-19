@@ -89,6 +89,8 @@ section {
 /* Navigation */
 .navbar {
     transition: top 0.3s;
+    background-color: #f2f2f2;
+    border-bottom: solid .15em black;
 }
 .nav-link {
     font-size: 1.1em;
@@ -214,6 +216,11 @@ footer {
     color: rgb(233, 232, 230);
     background-color: rgba(13, 13, 23);
     border: .25em solid rgba(233, 232, 230, 0.7);
+}
+
+.dark-mode .navbar {
+    background-color: transparent;
+    border-bottom: solid .1em #f2f2f2;
 }
 
 .dark-mode .nav-link,
