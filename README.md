@@ -12,15 +12,15 @@ Expected further minor updates pushed weekly or major updates monthly.
 
 ### QoL
 * Ensure site is A11Y friendly. (no date set)
-* Responsive Design (due 19/09/22)
 
 ### Known Issues
-* Dark Mode & Language not stored on users local storage.
 
 ### Major Update
 * Increased Animation and Functionality
 
 ### Completed Features List
+* Local Storage delivered 19/09/22
+* Responsive Design delivered 19/09/22
 * Initial design delivered 15/09/22
 * Dark Mode (15/09/22)
 * Language Switch for EN & PT (15/09/22)
