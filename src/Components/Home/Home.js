@@ -1,5 +1,9 @@
 import React from 'react';
 import CardAnimation from '../CardAnimation/CardAnimation';
+import Todo from '../ProjectAnimations/Todo';
+import Weather from '../ProjectAnimations/Weather';
+import Calculator from '../ProjectAnimations/Calculator';
+import Footer from '../Footer/Footer';
 
 export default function Home() { 
   return (
@@ -13,6 +17,10 @@ export default function Home() {
         <p className='fade-in'>Kevin</p>
       </header>
       <CardAnimation />
+      <Todo />
+      <Weather />
+      <Calculator />
+      <Footer />
     </>
   )
 }
