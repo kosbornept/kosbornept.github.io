@@ -13,7 +13,7 @@ const Todo = () => {
         <div className={`projectDetail ${inView ? 'fade-in-bottom1' : ''}`}>
             <div className='projectBody'>
                 <img className='projectImage' src={TodoImage} alt='To Do App' />
-                <p className="projectDescription"><span className='projectHeader'>To Do App</span><br/><br/><span style={{color: 'red'}}>Minimalistic</span> design that lets you focus on what's important.</p>
+                <p className="projectDescription"><span className='projectHeader'>To Do App</span><br/><br/><span className='leadWord'>Minimalistic</span> design that lets you focus on what's important.</p>
             </div>
         </div>
     </div>

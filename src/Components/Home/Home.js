@@ -10,9 +10,9 @@ export default function Home() {
     <>
       <header className="homeHeader">
         <blockquote className='fade-in-tl'>
-        Simplicity is the fundamental part of design where we so often miss our <span style={{color: 'red'}}>target</span>. 
+        Simplicity is the fundamental part of design where we so often miss our <span className='leadWord'>target</span>. 
         <br/><br />
-        <u className='focus-in-contract'>Let me help you <span style={{color: 'red'}}>hit yours</span>.</u>
+        <u className='focus-in-contract'>Let me help you <span className='leadWord'>hit yours</span>.</u>
         </blockquote>
         <p className='fade-in'>Kevin</p>
       </header>

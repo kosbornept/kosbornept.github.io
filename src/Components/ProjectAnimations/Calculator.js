@@ -13,7 +13,7 @@ const Calculator = () => {
         <div className={`projectDetail ${inView ? 'fade-in-bottom1' : ''}`}>
             <div className='projectBody'>
                 <img className='projectImage' src={CalculatorImage} alt='To Do App' style={{width: '40vw'}}/>
-                <p className="projectDescription"><span className='projectHeader'>Calculator</span><br/><br/><span style={{color: 'red'}}>Simple</span> calculator project to showcase that less can be more.</p>
+                <p className="projectDescription"><span className='projectHeader'>Calculator</span><br/><br/><span className='leadWord'>Simple</span> calculator project to showcase that less can be more.</p>
             </div>
         </div>
     </div>

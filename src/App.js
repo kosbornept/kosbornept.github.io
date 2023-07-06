@@ -5,6 +5,8 @@ import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 
+import Logo from './Osborne Logo.svg';
+
 import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route, Navigate } from 'react-router-dom';
 
 const appRouter = createBrowserRouter(createRoutesFromElements(
@@ -24,6 +26,7 @@ const appRouter = createBrowserRouter(createRoutesFromElements(
 function App() {
   return (
     <div className="App">
+      <img className='logo' src={Logo} alt='Osborne' />
       <RouterProvider router={appRouter}>
 
       </RouterProvider>

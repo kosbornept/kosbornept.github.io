@@ -1,15 +1,21 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 import PhotoGallery from '../PhotoGallery/PhotoGallery';
 
 export default function About() {
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = '/contact';
+    navigate(path);
+  }
   return (
     <>
       <div className='aboutDiv'>
         <div className='aboutTitle fade-in-tl'>
           <h1>Kevin Osborne</h1>
-          <h3>{`Retail Manager > Project Manager > `}<span style={{color:"red"}}>Web Designer</span></h3>
-          <button style={{marginBottom: '5em'}} className='contactBtnAbout'>Contact</button>
+          <h3>{`Retail Manager > Project Manager > `}<span className='leadWord'>Web Designer</span></h3>
+          <button onClick={routeChange} style={{marginBottom: '5em'}} className='contactBtnAbout'>Contact</button>
           <div style={{display: 'flex', gap: '5em'}}>
             <div>
               <h2>Skills</h2>
