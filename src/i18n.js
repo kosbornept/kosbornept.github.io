@@ -26,7 +26,7 @@ i18n
           description: {
             quote1: 'Simplicity is the fundamental part of design where we so often miss our <1>target<1>.',
             quote2: 'Let me help you <1>hit yours</1>.',
-            about: `I live in Portugal with my partner Ana, we have recently just bought our first house, which we share with the real owner, our cat Loki. I like to unwind by creating music, painting or playing video games.
+            about: `I live in Portugal with my partner Ana, where we have recently just purchased our first house, which we share with the real owner; our cat Loki. I like to unwind by creating music, painting or playing video games.
             <1/><1/>  
             I started considering web design as a potential career in 2020. During the pandemic, I didn't want to waste time indoors when I was given the perfect opportunity to use the isolation to study.
             <1/><1/>
@@ -94,20 +94,20 @@ i18n
             description: {
                 quote1: 'Simplicidade é a parte fundamental do design onde muitas vezes falhamos o <1>alvo<1>.',
                 quote2: 'Deixe-me ajudá-lo a acertar <1>o seu</1>.',
-                about: `Eu vivo em Portugal com a minha namorada Ana, onde acabámos de comprar a nossa primeira casa, que partilhamos com o verdadeiro dono, o nosso gato Loki. A maneira de como gosto de relaxar vem da criação de música, da pintura e dos video jogos.
+                about: `Eu vivo em Portugal com a minha namorada Ana, onde acabámos de comprar a nossa primeira casa, que partilhamos com o verdadeiro dono, o nosso gato Loki. A maneira como gosto de relaxar vem da criação de música, da pintura e dos video jogos.
                 <1/><1/>
-                Comecei a considerar o web design como uma potencial carreira em 2020. Durante a pandemia, não queria perder tempo dentro de casa quando tive a oportunidade perfeita de usar o isolamento para estudar.
+                Comecei a considerar o web design como uma potencial carreira em 2020. Durante a pandemia, não queria perder tempo dentro de casa e aproveitei a oportunidade do isolamento para estudar.
                 <1/><1/>
-                Antes disso, tinha uma licenciatura em Música, Negócios e Gestão, passei 14 anos em gerente commercial, 1 ano em gestor de projetos e outros empregos pelo meio. Encontrei o meu caminho na liderança e ao ser liderado como parte de uma equipa coesa.
+                A minha licenciatura é em Música, Negócios e Gestão, passei 14 anos como gerente comercial, 1 ano como gestor de projetos entre outros. Encontrei o meu caminho na liderança e ao ser liderado como parte de uma equipa coesa.
                 <1/><1/>
-                Encontrei vários cursos, e dediquei-me a tudo que pude. Alguns dos estilos gostei, outros não tanto. Percebi que aqueles que tinha gostado, realmente influenciaram e impressionaram-me. Por isso foquei-me no UX/UI design, usando React.`,
+                Encontrei vários cursos, e dediquei-me a tudo o que pude. Alguns dos estilos gostei, outros nem tanto. Percebi que aqueles que tinha gostado, realmente influenciaram e impressionaram-me. Por isso foquei-me no UX/UI design, usando React.`,
                 cardQuote1: {
                     title: 'Design claro',
-                    body: 'Definir bases de um projeto é uma parte fundamental do processo. Muitas vezes, o design é a parte mais <1>divertida</1> desse processo, então deixe-me ajudá-lo a alcançar o que <1>deseja</1>.'
+                    body: 'Definir bases de um projeto é uma parte fundamental do processo. Muitas vezes, o design é a parte mais <1>divertida</1>, então deixe-me ajudá-lo a alcançar o que <1>deseja</1>.'
                 },
                 cardQuote2: {
                     title: 'Metas atingíveis',
-                    body: 'Um processo de design deve vir com metas alcançáveis. Isso não apenas permite a <1>confiança</1> com os stakeholders, mas permite que o relacionamento do trabalho seja construído com <1>honestidade</1>.'
+                    body: 'Um processo de design deve vir com metas alcançáveis. Isso cria <1>confiança</1> com os stakeholders e permite que o relacionamento do trabalho seja construído com <1>honestidade</1>.'
                 },
                 cardQuote3: {
                     title: 'Feedback construtivo',
@@ -115,7 +115,7 @@ i18n
                 }
               },
               skills: {
-                jobList: `Gerente Commercial > Gestor de Projetos > <1>Web Designer</1>`,
+                jobList: `Gerente Comercial > Gestor de Projetos > <1>Web Designer</1>`,
                 title1: 'Capacidades',
                 title2: 'Outros',
                 basic1: 'Salesforce Básico',
@@ -124,11 +124,11 @@ i18n
               projects: {
                 calculator: {
                     title: 'Calculadora',
-                    body: 'Um projeto de uma calculadora <1>simples</1> que mostraa que menos pode ser mais.'
+                    body: 'Um projeto de uma calculadora <1>simples</1> que mostra que menos pode ser mais.'
                 },
                 todo: {
                     title: 'Lista de Tarefas',
-                    body: `Um design <1>minimalista</1> que permite que crie tarefas de maneira a faciltá-lo.`
+                    body: `Um design <1>minimalista</1> que permite que crie tarefas de maneira a facilitá-lo.`
                 },
                 weather: {
                     title: 'App Meteorológico',
@@ -142,7 +142,7 @@ i18n
               },
               contact: {
                 title: `Vamos entrar em contacto`,
-                body: `Se você tem uma ideia aspirante no qual precisa de ajuda, a simplesmente precisa de apoio desde o início, entre em contacto para discutir o que conseguimo fazer.`,
+                body: `Se você tem uma ideia na qual precisa de ajuda, ou simplesmente precisa de apoio desde o início, entre em contacto para analisar o que conseguimos fazer.`,
                 email: 'Por <1>e-mail</1>',
                 whatsapp: 'Por <1>whatsapp</1>',
                 whatsappChat: 'Chat Direto'

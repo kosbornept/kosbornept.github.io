@@ -20,7 +20,7 @@ export default function About() {
         <div className='aboutTitle fade-in-tl'>
           <h1>Kevin Osborne</h1>
           <h3><Trans i18nKey="skills.jobList">{`Retail Manager > Project Manager > `}<span className='leadWord'>Web Designer</span></Trans></h3>
-          <button onClick={routeChange} style={{marginBottom: '5em'}} className='contactBtnAbout'>Contact</button>
+          <button onClick={routeChange} style={{marginBottom: '5em'}} className='contactBtnAbout'>{t('footer.title')}</button>
           <div style={{display: 'flex', gap: '5em'}}>
             <div>
               <h2>{t('skills.title1')}</h2>
@@ -43,7 +43,7 @@ export default function About() {
         <div className='aboutDescription fade-in'>
           <p>
           <Trans i18nKey="description.about">
-          I live in Portugal with my partner Ana, we have recently just bought our first house, which we share with the real owner, our cat Loki. I like to unwind by creating music, painting or playing video games.
+          I live in Portugal with my partner Ana, where we have recently just purchased our first house, which we share with the real owner; our cat Loki. I like to unwind by creating music, painting or playing video games.
           <br/><br/>  
           I started considering web design as a potential career in 2020. During the pandemic, I didn't want to waste time indoors when I was given the perfect opportunity to use the isolation to study.
           <br/><br/>

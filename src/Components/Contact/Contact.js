@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <>
       <div className='contactDiv'>
-        <div className='fade-in-tl' style={{width: '50%'}}>
+        <div className='fade-in-tl contactDesc'>
           <h2>{t('contact.title')}</h2>
           <p><Trans i18nKey="contact.body">Whether you have an aspiring idea and need help getting it over the line, or perhaps you need help from the start, please get in touch and let's discuss what we can get done for you.
           </Trans>
@@ -16,7 +16,7 @@ export default function Contact() {
           <span className="leadWord "style={{fontSize: 'calc(8px + 2vmin)'}}>{t('about.name')}</span>
           </p>
         </div>
-        <div className='fade-in' style={{width: '30%'}}>
+        <div className='fade-in contactLinks'>
           <div style={{marginBottom: '3em'}}>
             <h2><Trans i18nKey="contact.email">By <span className='leadWord'>email</span></Trans></h2>
             <h3><Obfuscate email="kwosborne.pt@gmail.com" /></h3>

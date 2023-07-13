@@ -65,11 +65,13 @@ ul {
 /* Home Header Quote */
 
 .homeHeader {
-  padding: 14rem 12rem 10rem;
+  padding: 30vh 20vw 10vh;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
   font-size: calc(0.625em + 2vmin);
+  width: fit-content;
+  margin: auto;
 }
 
 /* Goals */
@@ -104,7 +106,7 @@ ul {
 }
 
 .goalsCardBody {
-  padding: 0 1em 1em;
+  padding: 0 2vw 1vh;
 }
 
 /* Projects */
@@ -126,7 +128,8 @@ ul {
   padding: 2em 0;
 }
 
-.projectBody {
+.projectBody,
+.projectBodyReverse {
   display: flex;
   flex-direction: row;
   gap: 5vw;
@@ -173,17 +176,10 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
-  padding: 10em;
+  grid-column-gap: 3vw;
+  grid-row-gap: 4vh;
+  padding: 10vh 10vw;
 }
-
-.photo1 { grid-area: 1 / 1 / 2 / 2; }
-.photo2 { grid-area: 1 / 2 / 2 / 3; }
-.photo3 { grid-area: 1 / 3 / 2 / 4; }
-.photo4 { grid-area: 2 / 1 / 3 / 2; }
-.photo5 { grid-area: 2 / 2 / 3 / 3; }
-.photo6 { grid-area: 2 / 3 / 3 / 4; }
 
 .photoInitial {
   float: left;
@@ -202,6 +198,15 @@ ul {
   justify-content: space-evenly;
   font-size: calc(.25em + 2vmin);
   height: 90vh;
+}
+
+.contactDesc {
+  width: 50vw;
+  padding: 0 5vw;
+}
+
+.contactLinks {
+  width: 30vw;
 }
 
 /* Footer */
@@ -471,14 +476,169 @@ ul {
   .projectDescription {
     width: 25vw;
   }
+  .contactDiv {
+    padding: 25vh 5vw;
+  }
+  .contactDesc {
+    width: 40vw;
+    padding: 0 5vw 0 0;
+  }
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-
+  .logo {
+    padding-left: 0;
+  }
+  .goalsParentDiv {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .goalsDiv1 { grid-area: 1 / 1 / 1 / 1;}
+  .goalsDiv2 { grid-area: 2 / 1 / 2 / 1;}
+  .goalsDiv3 { grid-area: 3 / 1 / 3 / 1;}
+  .goalsDiv1,
+  .goalsDiv2,
+  .goalsDiv3 {
+    padding: 5vh 10vw;
+    font-size: calc(0.6em + 2vmin);
+    margin-bottom: 10vh;
+  }
+  .projectDiv {
+    text-align: center;
+  }
+  .projectHeader {
+    text-align: center;
+  }
+  .projectBody {
+    flex-direction: column-reverse;
+  }
+  .projectBodyReverse {
+    flex-direction: column;
+    padding: 0 7vw !important;
+  }
+  .projectImage {
+    width: 100%;
+    margin: auto;
+  }
+  .projectDescription {
+    width: 100%;
+  }
+  .contactBtn {
+    padding: 2em;
+  }
+  .aboutDiv {
+    flex-direction: column;
+  }
+  .aboutDescription {
+    width: 60vw;
+  }
+  .galleryDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contactDiv {
+    justify-content: space-between;
+    padding: 30vh 7vw;
+  }
 }
 
 /* Mobile */
-@media screen and (max-width: 676px) {
-
+@media screen and (max-width: 767px) {
+  nav {
+    text-align: center;
+  }
+  .logo {
+    position: relative;
+    padding: 0;
+    height: 20vh;
+    width: 100%;
+  }
+  .homeHeader {
+    padding: 10vh 0 2vh;
+    text-align: center;
+  }
+  .goalsParentDiv {
+    padding: 0;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .goalsDiv1 { grid-area: 1 / 1 / 1 / 1; }
+  .goalsDiv2 { grid-area: 2 / 1 / 2 / 1; }
+  .goalsDiv3 { grid-area: 3 / 1 / 3 / 1; }
+  .goalsDiv1,
+  .goalsDiv2,
+  .goalsDiv3 {
+    padding: 2vh 5vw;
+    font-size: calc(0.6em + 2vmin);
+    margin-bottom: 10vh;
+  }
+  .projectDiv {
+    text-align: center;
+  }
+  .projectHeader {
+    text-align: center;
+  }
+  .projectBody {
+    flex-direction: column-reverse;
+  }
+  .projectBodyReverse {
+    flex-direction: column;
+    padding: 0 7vw !important;
+  }
+  .projectImage {
+    width: 100%;
+    margin: auto;
+  }
+  .projectDescription {
+    width: 100%;
+  }
+  .contactBtn {
+    padding: 1.5em;
+    height: fit-content;
+  }
+  .footerDiv {
+    padding: 5vh 0;
+    align-items: center;
+  }
+  .aboutDiv {
+    flex-direction: column;
+    padding: 0;
+    width: 90vw;
+  }
+  .aboutDescription {
+    width: 70vw;
+    font-size: calc(1em + 2vmin);
+  }
+  .galleryDiv {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contactDiv {
+    flex-direction: column;
+    padding: 0;
+    font-size: calc(.7em + 2vmin);
+    height: fit-content;
+  }
+  .contactDesc {
+    margin: auto;
+    width: 80vw;
+  }
+  .contactLinks {
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+  }
+  .contactLinks > div > h2 {
+    text-align: start;
+  }
+  .aboutDiv {
+    margin: auto;
+  }
+  .aboutTitle > div {
+    gap: 0 !important;
+  }
+  .aboutTitle > div > div:nth-child(1) {
+    text-align: start !important;
+  }
+  .aboutTitle > div > div:nth-child(2) {
+    text-align: end !important;
+  }
 }
