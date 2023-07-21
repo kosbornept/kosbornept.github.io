@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ab49db28.css",
+    "main.js": "/static/js/main.9ada3e50.js",
+    "static/media/family.jpg": "/static/media/family.5ed044e724b2d965af63.jpg",
+    "static/media/algarve.jpg": "/static/media/algarve.73ca9d0425b417b26218.jpg",
+    "static/media/home.jpg": "/static/media/home.67eee046144624ed8d1c.jpg",
+    "static/media/norway.jpg": "/static/media/norway.929d7d821c84f8847225.jpg",
+    "static/media/loki.jpg": "/static/media/loki.5c7f90e927d171c25dc5.jpg",
+    "static/media/sintra.jpg": "/static/media/sintra.12f3b8b7bbcd2c4c2238.jpg",
+    "static/media/weather.png": "/static/media/weather.d95ac8991be3ff0c9606.png",
+    "static/media/dashboard.png": "/static/media/dashboard.d29e8e980f3a0f3b6e3a.png",
+    "static/media/calculator.png": "/static/media/calculator.f149c928293de1c647c3.png",
+    "static/media/todo.png": "/static/media/todo.5b8950aafe72dab83035.png",
+    "static/media/Osborne Logo.svg": "/static/media/Osborne Logo.06f9ac3d43f24898a45ea392868ff4cb.svg",
+    "index.html": "/index.html",
+    "main.ab49db28.css.map": "/static/css/main.ab49db28.css.map",
+    "main.9ada3e50.js.map": "/static/js/main.9ada3e50.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab49db28.css",
+    "static/js/main.9ada3e50.js"
+  ]
+}
