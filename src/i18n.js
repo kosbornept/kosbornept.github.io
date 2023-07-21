@@ -58,6 +58,10 @@ i18n
                 title: 'Calculator',
                 body: 'A <1>simple</1> calculator project to showcase that less can be more.'
             },
+            dashboard: {
+                title: 'Admin Dashboard',
+                body: `A <1>clean</1> high level dashboard to visualize your company.`
+            },
             todo: {
                 title: 'To Do App',
                 body: `A <1>minimalistic</1> design that lets you focus on what's important.`
@@ -126,6 +130,10 @@ i18n
                     title: 'Calculadora',
                     body: 'Um projeto de uma calculadora <1>simples</1> que mostra que menos pode ser mais.'
                 },
+                dashboard: {
+                  title: 'Dashboard Admin',
+                  body: `Um dashboard <1>completo</1> de maneira a visualizar as suas vendas`
+                },
                 todo: {
                     title: 'Lista de Tarefas',
                     body: `Um design <1>minimalista</1> que permite que crie tarefas de maneira a facilitá-lo.`
@@ -145,7 +153,7 @@ i18n
                 body: `Se você tem uma ideia na qual precisa de ajuda, ou simplesmente precisa de apoio desde o início, entre em contacto para analisar o que conseguimos fazer.`,
                 email: 'Por <1>e-mail</1>',
                 whatsapp: 'Por <1>whatsapp</1>',
-                whatsappChat: 'Chat Direto'
+                whatsappChat: 'Contacto Direto'
               },
               footer: {
                 title: 'Contacto',

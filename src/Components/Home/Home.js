@@ -5,6 +5,7 @@ import CardAnimation from '../CardAnimation/CardAnimation';
 import Todo from '../ProjectAnimations/Todo';
 import Weather from '../ProjectAnimations/Weather';
 import Calculator from '../ProjectAnimations/Calculator';
+import Dashboard from '../ProjectAnimations/Dashboard';
 import Footer from '../Footer/Footer';
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
         <p className='fade-in'>{t('about.name')}</p>
       </header>
       <CardAnimation />
+      <Dashboard />
       <Todo />
       <Weather />
       <Calculator />
