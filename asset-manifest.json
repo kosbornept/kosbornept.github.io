@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ab49db28.css",
-    "main.js": "/static/js/main.9ada3e50.js",
+    "main.css": "/static/css/main.8d1fa88a.css",
+    "main.js": "/static/js/main.880f0407.js",
     "static/media/family.jpg": "/static/media/family.5ed044e724b2d965af63.jpg",
     "static/media/algarve.jpg": "/static/media/algarve.73ca9d0425b417b26218.jpg",
     "static/media/home.jpg": "/static/media/home.67eee046144624ed8d1c.jpg",
@@ -14,11 +14,11 @@
     "static/media/todo.png": "/static/media/todo.5b8950aafe72dab83035.png",
     "static/media/Osborne Logo.svg": "/static/media/Osborne Logo.06f9ac3d43f24898a45ea392868ff4cb.svg",
     "index.html": "/index.html",
-    "main.ab49db28.css.map": "/static/css/main.ab49db28.css.map",
-    "main.9ada3e50.js.map": "/static/js/main.9ada3e50.js.map"
+    "main.8d1fa88a.css.map": "/static/css/main.8d1fa88a.css.map",
+    "main.880f0407.js.map": "/static/js/main.880f0407.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab49db28.css",
-    "static/js/main.9ada3e50.js"
+    "static/css/main.8d1fa88a.css",
+    "static/js/main.880f0407.js"
   ]
 }
