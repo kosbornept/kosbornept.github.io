@@ -30,9 +30,11 @@ export default function Navbar() {
         </li>
         <li>
         <div>
+
         <select
           defaultValue={i18n.resolvedLanguage}
-          style={{ fontWeight: 'bold' }}
+          className='selectBox'
+          style={{ fontWeight: 'bold', display: 'flex', flexDirection: 'column' }}
           onChange={e => {
             i18n.changeLanguage(e.target.value);
           }}
@@ -40,6 +42,7 @@ export default function Navbar() {
           {Object.keys(lngs).map((lng) => (
               <option
                 key={lng}
+                className='selectOption'
                 value={lng}
                 style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }}
               >

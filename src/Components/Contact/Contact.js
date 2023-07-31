@@ -23,7 +23,7 @@ export default function Contact() {
           </div>
           <div>
             <h2><Trans i18nKey="contact.whatsapp">By <span className='leadWord'>whatsapp</span></Trans></h2>
-            <h3><Obfuscate href="https://wa.me/351926563499">{t('contact.whatsappChat')}</Obfuscate></h3>
+            <h3><Obfuscate target="_blank" href="https://wa.me/351926563499">{t('contact.whatsappChat')}</Obfuscate></h3>
           </div>
         </div>
       </div>

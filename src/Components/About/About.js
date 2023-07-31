@@ -20,7 +20,7 @@ export default function About() {
         <div className='aboutTitle fade-in-tl'>
           <h1>Kevin Osborne</h1>
           <h3><Trans i18nKey="skills.jobList">{`Retail Manager > Project Manager > `}<span className='leadWord'>Web Designer</span></Trans></h3>
-          <button onClick={routeChange} style={{marginBottom: '5em'}} className='contactBtnAbout'>{t('footer.title')}</button>
+          <button onClick={routeChange} style={{marginBottom: '5em', fontWeight: "bold"}} className='contactBtnAbout'>{t('footer.title')}</button>
           <div style={{display: 'flex', gap: '5em'}}>
             <div>
               <h2>{t('skills.title1')}</h2>
